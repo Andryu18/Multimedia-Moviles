@@ -1,0 +1,49 @@
+1. Crear repositorio
+2. Instalar y configurar Git
+3. Preparar la carpeta en PC con los archivos a subir
+4. Limpiar .git oculto en apps
+
+	dir aplication_1 /a
+	dir application2 /a
+		del aplication_1\.git
+		del application2\.git
+
+5. Inicializar Git en la carpeta principal
+	git init
+	git branch -M main
+
+6.Crear .gitignore para Flutter
+	notepad .gitignore
+
+	Contenido:
+		.dart_tool/
+		.packages
+		.pub-cache/
+		build/
+
+		android/.gradle/
+		android/local.properties
+
+		ios/Pods/
+		ios/.symlinks/
+
+		.idea/
+		.vscode/
+7.Conectar con GitHub
+
+	git remote add origin "Colocar URL de repositorio aqui"
+	git remote -v
+
+8.Subir el proyecto (primer commit)
+	git add .
+	git commit -m "Primer commit con dos aplicaciones Flutter"
+
+9. Subir a GitHub / Subir de manera forzada
+
+	git push -u origin main / git push -u origin main --force
+
+10. Para subir cambios despues
+
+	git add .
+	git commit -m "mensaje corto"
+	git push
