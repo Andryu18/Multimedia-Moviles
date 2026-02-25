@@ -75,8 +75,7 @@ class MainApp extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 6.0),
                           child: Customcard(
-                            title:
-                                "Peliculaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas",
+                            title: "Peliculas",
                             subtitle: "Sumergete en el mundo del cine",
                             icon: Icons.local_movies,
                           ),
